@@ -1,0 +1,131 @@
+.hero__container {
+    padding: 0;
+    padding-bottom: 150px;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    margin-bottom: 140px;
+}
+
+.hero__img {
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.hero__content {
+    max-width: 570px;
+    padding-left: 15px;
+}
+
+.hero__title {
+    width: 8em;
+    font-size: calc(20px + (68 - 20) * ((100vw - 320px) / (1280 - 320)));
+    font-weight: 500;
+}
+
+@media(min-width:1280px) {
+    .hero__title {
+        font-size: 68px;
+    }
+}
+
+.hero__text {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 70px;
+}
+
+.hero__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__item {
+    max-width: 320px;
+    padding: 25px;
+    transition: background-color 0.3s ease 0s;
+}
+
+.hero__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(51, 51, 51, 0.6);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.hero__arrow {
+    width: 32px;
+    height: 32px;
+    fill: rgba(51, 51, 51, 0.6);
+}
+
+.hero__subtitle {
+    color: #156963;
+    font-size: 32px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.3s ease 0s;
+}
+
+.hero__card-list {
+    display: flex;
+    gap: 30px;
+    padding: 0 15px;
+    overflow-x: auto;
+}
+
+.hero__card-item {
+    max-width: 268px;
+    min-height: 155px;
+}
+
+
+.hero__small-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+@media (pointer:fine) and (hover: hover) {
+    .hero__item:hover {
+        background-color: #156963;
+    }
+
+    .hero__item:hover .hero__subtitle {
+        color: #FFFFFF;
+    }
+
+    .hero__item:hover .hero__arrow {
+        fill: rgba(242, 242, 242, 0.5);
+    }
+
+    .hero__item:hover .hero__btn {
+        color: rgba(242, 242, 242, 0.5);
+    }
+}
+
+@media(min-width:992px) {
+    .hero__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero__content {
+        padding: 0;
+        padding-top: 200px;
+    }
+}
+
+@media(min-width:576px) {
+    .hero__list {
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+}

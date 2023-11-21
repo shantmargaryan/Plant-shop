@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/library/slide.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Plant shop</title>
+</head>
+
+<body class="page__body">
+   <header class="header fixed-block">
+      <div class="header__container container">
+         <a class="header__logo logo" href="#">
+            <svg class="logo__icon">
+               <use xlink:href="img/svg/_sprite.svg#logo" />
+            </svg>
+         </a>
+         <nav class="header__nav nav">
+            <ul class="nav__list list-reset">
+               <li class="nav__item">
+                  <button class="nav__icon-btn button-reset" type="button">
+                     <input class="nav__input" type="search" placeholder="Search">
+                     <svg class="nav__search">
+                        <use xlink:href="img/svg/_sprite.svg#search" />
+                     </svg>
+                  </button>
+               </li>
+               <li class="nav__item nav__item_span">
+                  <span class="nav__span">
+                     Cart
+                  </span>
+                  <a class="nav__link link" href="#">
+                     <svg class="nav__cart">
+                        <use xlink:href="img/svg/_sprite.svg#shopping-cart" />
+                     </svg>
+                  </a>
+               </li>
+               <div class="nav__btn-box">
+                  <li class="nav__item">
+                     <button class="nav__btn btn button-reset" type="button">
+                        Sign Up
+                     </button>
+                  </li>
+                  <li class="nav__item">
+                     <button class="nav__btn btn button-reset" type="button">
+                        Sign In
+                     </button>
+                  </li>
+               </div>
+            </ul>
+         </nav>
+         <button class="header__burger burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+         </button>
+      </div>
+   </header>
+
+   <main class="main">
+      <section class="hero">
+         <div class="hero__container container">
+            <div class="hero__wrapper">
+               <picture class="hero__picture">
+                  <source srcset="img/pexels-cottonbro.webp" type="img/webp">
+                  <img class="hero__img img" src="img/pexels-cottonbro.png" alt="pexels-cottonbro">
+               </picture>
+               <div class="hero__content">
+                  <h1 class="hero__title title">
+                     Kembang Flower Mantap
+                  </h1>
+                  <p class="hero__text text">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s,
+                  </p>
+                  <ul class="hero__list list-reset">
+                     <li class="hero__item">
+                        <button class="hero__btn button-reset">
+                           <svg class="hero__arrow">
+                              <use xlink:href="img/svg/_sprite.svg#arrow-left" />
+                           </svg>
+                           Previous
+                        </button>
+                        <span class="hero__subtitle">
+                           Kaktus Plant
+                        </span>
+                     </li>
+                     <li class="hero__item">
+                        <button class="hero__btn button-reset">
+                           Next
+                           <svg class="hero__arrow">
+                              <use xlink:href="img/svg/_sprite.svg#arrow-right" />
+                           </svg>
+                        </button>
+                        <span class="hero__subtitle">
+                           Rahasia Plant
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <ul class="hero__card-list list-reset">
+               <li class="hero__card-item card">
+                  <h2 class="hero__small-title title">
+                     <svg class="hero__icon icon">
+                        <use xlink:href="img/svg/_sprite.svg#fast" />
+                     </svg>
+                     Fast
+                     Delivery
+                  </h2>
+                  <p class="hero__smal-text text">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                     industry's standard
+                  </p>
+               </li>
+               <li class="hero__card-item card">
+                  <h2 class="hero__small-title title">
+                     <svg class="hero__icon icon">
+                        <use xlink:href="img/svg/_sprite.svg#headphones" />
+                     </svg>
+                     Great Customer Service
+                  </h2>
+                  <p class="hero__smal-text text">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                     industry's standard
+                  </p>
+               </li>
+               <li class="hero__card-item card">
+                  <h2 class="hero__small-title title">
+                     <svg class="hero__icon icon">
+                        <use xlink:href="img/svg/_sprite.svg#plant" />
+                     </svg>
+                     Original
+                     Plants
+                  </h2>
+                  <p class="hero__smal-text text">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                     industry's standard
+                  </p>
+               </li>
+               <li class="hero__card-item card">
+                  <h2 class="hero__small-title title">
+                     <svg class="hero__icon icon">
+                        <use xlink:href="img/svg/_sprite.svg#dollar-symbol" />
+                     </svg>
+                     Affordable
+                     Price
+                  </h2>
+                  <p class="hero__smal-text text">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                     industry's standard
+                  </p>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <section class="featured">
+         <div class="featured__container container">
+            <div class="featured__content">
+               <h2 class="featured__title title">
+                  Featured Plants
+               </h2>
+               <div class="featured__dropdown">
+                  <button class="featured__btn button-reset">
+                     Cheaper First
+                     <svg class="featured__arrow">
+                        <use xlink:href="img/svg/_sprite.svg#chevron-down" />
+                     </svg>
+                  </button>
+                  <div class="featured__dropdown-content">
+                  </div>
+               </div>
+            </div>
+            <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/annieSpratt.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/annieSpratt.png" alt="annieSpratt">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kaktus Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/Chlorophytu.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/Chlorophytu.png" alt="Chlorophytu">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Landak Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 105.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/ihTheme.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/ihTheme.png" alt="ihTheme">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kecubung Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="featured__item">
+                        <picture class="featured__picture">
+                           <source srcset="img/featured/imDfuL.webp" type="img/webp">
+                           <img class="featured__img img" src="img/featured/imDfuL.png" alt="imDfuL">
+                        </picture>
+                        <span class="featured__name subtitle">
+                           Kecubung Plants
+                        </span>
+                        <span class="featured__price price">
+                           IDR 85.000
+                        </span>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="featured__item">
+                        <picture class="featured__picture">
+                           <source srcset="img/featured/xrmx.webp" type="img/webp">
+                           <img class="featured__img img" src="img/featured/xrmx.png" alt="xrmx">
+                        </picture>
+                        <span class="featured__name subtitle">
+                           Kecubung Plants
+                        </span>
+                        <span class="featured__price price">
+                           IDR 85.000
+                        </span>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/annieSpratt.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/annieSpratt.png" alt="annieSpratt">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kaktus Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/Chlorophytu.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/Chlorophytu.png" alt="Chlorophytu">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Landak Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 105.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/ihTheme.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/ihTheme.png" alt="ihTheme">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kecubung Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="featured__item">
+                        <picture class="featured__picture">
+                           <source srcset="img/featured/imDfuL.webp" type="img/webp">
+                           <img class="featured__img img" src="img/featured/imDfuL.png" alt="imDfuL">
+                        </picture>
+                        <span class="featured__name subtitle">
+                           Kecubung Plants
+                        </span>
+                        <span class="featured__price price">
+                           IDR 85.000
+                        </span>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="featured__item">
+                        <picture class="featured__picture">
+                           <source srcset="img/featured/xrmx.webp" type="img/webp">
+                           <img class="featured__img img" src="img/featured/xrmx.png" alt="xrmx">
+                        </picture>
+                        <span class="featured__name subtitle">
+                           Kecubung Plants
+                        </span>
+                        <span class="featured__price price">
+                           IDR 85.000
+                        </span>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/annieSpratt.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/annieSpratt.png" alt="annieSpratt">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kaktus Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/Chlorophytu.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/Chlorophytu.png" alt="Chlorophytu">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Landak Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 105.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/ihTheme.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/ihTheme.png" alt="ihTheme">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kecubung Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/imDfuL.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/imDfuL.png" alt="imDfuL">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kecubung Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="swiper-slide">
+                     <article class="featured__list">
+                        <div class="featured__item">
+                           <picture class="featured__picture">
+                              <source srcset="img/featured/xrmx.webp" type="img/webp">
+                              <img class="featured__img img" src="img/featured/xrmx.png" alt="xrmx">
+                           </picture>
+                           <span class="featured__name subtitle">
+                              Kecubung Plants
+                           </span>
+                           <span class="featured__price price">
+                              IDR 85.000
+                           </span>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="buy">
+         <div class="buy__container container">
+            <div class="buy__content">
+               <h2 class="buy__title title">
+                  Buy more plants, it helps you to be relaxed
+               </h2>
+               <p class="buy__text text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida gravida aliquam. Pellentesque
+                  et lobortis nisl. Sed et mauris justo. Nulla eu enim non mauris maximus dignissim. Maecenas vitae eros
+                  sapien. Quisque pellentesque tempus dignissim.
+               </p>
+               <picture class="buy__picture">
+                  <source srcset="img/liana-mikah.webp" type="img/webp">
+                  <img class="buy__img img" src="img/liana-mikah.png" alt="liana-mikah">
+               </picture>
+            </div>
+            <picture class="buy__picture">
+               <source srcset="img/jason-leung.webp" type="img/webp">
+               <img class="buy__plant-img img" src="img/jason-leung.png" alt="jason-leung">
+            </picture>
+         </div>
+      </section>
+
+      <section class="plant">
+         <div class="plant__container container">
+            <div class="plant__content">
+               <h2 class="plant__title title">
+                  Get your favourites plant on our shop now
+               </h2>
+               <a class="plant__link link" href="#">
+                  Visit Shop
+               </a>
+            </div>
+            <picture class="plant__picture">
+               <source srcset="img/sanni-sahil.webp" type="img/webp">
+               <img class="plant__img img" src="img/sanni-sahil.png" alt="sanni-sahil">
+            </picture>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="footer__container container">
+         <div class="footer__content">
+            <h2 class="footer__title title">
+               plantku
+            </h2>
+            <span class="footer__subtitle">
+               Plantku House
+            </span>
+            <p class="footer__text text">
+               Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282
+            </p>
+         </div>
+         <ul class="footer__list list-reset">
+            <li class="footer__item">
+               <h3 class="footer__small-title title">
+                  Perusahaan
+               </h3>
+            </li>
+            <li class="footer__item">
+               <a class="footer__link link" href="#">
+                  Tentang Kami
+               </a>
+            </li>
+            <li class="footer__item">
+               <a class="footer__link link" href="#">
+                  Hubungi Kami
+               </a>
+            </li>
+         </ul>
+         <ul class="footer__list list-reset">
+            <li class="footer__item">
+               <h3 class="footer__small-title title">
+                  Produk
+               </h3>
+            </li>
+            <li class="footer__item">
+               <a class="footer__link link" href="#">
+                  Tanaman
+               </a>
+            </li>
+            <li class="footer__item">
+               <a class="footer__link link" href="#">
+                  Tanaman Lain
+               </a>
+            </li>
+         </ul>
+         <div class="footer__last-content">
+            <h3 class="footer__small-title title">
+               Berlangganan Email Kami
+            </h3>
+            <form class="footer__form" action="#" name="form" method="post" enctype="multipart/form-data">
+               <input class="footer__input" type="email" placeholder="Masukan Alamat Email">
+               <button class="footer__btn button-reset btn">
+                  Submit
+               </button>
+            </form>
+         </div>
+      </div>
+   </footer>
+
+   <script src="js/slide.js"></script>
+   <script src="js/main.js">
+   </script>
+</body>
+
+</html>
